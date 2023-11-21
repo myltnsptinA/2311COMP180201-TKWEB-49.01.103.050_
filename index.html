@@ -4,27 +4,23 @@
      <H1> SẢN PHẨM </H1>
 </HEAD>
 <BODY>
-  <button type="button">Say hello</button>
-  <button type="button">Say Chào</button>
-  <script> 
-    $(document). ready( function(){
-      $("button"). click (function(){
-        alert('Xin chào !!!!')
-      });
+ <h2>KIỂM TRA NĂM NHUẬN
+ </h2>
+  <div>
+    Năm: <input id="txtNam" type="number"/>
+  </div>
+  <button type="button">Kiểm tra</button>
+  <div id="ketqua"></div>
+  <script src="jquery-3.7.1.jx"></script>
+  <cript>
+    $(document).ready(function)(){
+    $("button").click(function){
+    let nam = $("#txtNam").val();
+    let thang = $("txtThang").val();
+    let namNhuan = false;
+//if(nam)
+    });
     });
   </script>
-  <div> 
-    <div class="hh-box">
-    <div class="hh-box-image" src="images2.2/HangHoa/iphone-x-265gb-gray.jpg" alt="Iphone" class="hh-box-image"/>
-    <div class="hh-box-price">$296</div>
-    <div class="hh-box-actions">
-    <a herf="?mahh=1001"><img src="images/favourites.png"/></a>
-    <a herf="?mahh=1001"><img src="images/Letter.png"/></a>
-    <a herf="?mahh=1001"><img src="images/Basket.png"/></a>
-    </div>
-    <img src="images/new-icon.png"
-    class="hh-box-icon" width="60"/>
-    </div>
-      
-  </div>
+</BODY>
 </HTML>
