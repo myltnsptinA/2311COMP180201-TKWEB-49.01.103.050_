@@ -18,6 +18,9 @@
     let nam = $("#txtNam").val();
     let thang = $("txtThang").val();
     let namNhuan = false;
+    if((nam % 400==0 || (nam % 4==0&& nam % 100!= 0)){
+    laNamNhuan = true;
+    }
 //if(nam)
     });
     });
