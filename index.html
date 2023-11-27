@@ -1,38 +1,81 @@
-</DOCTYPE> 
-<HTML>
-  <HEAD>
-</HEAD>
-<BODY>
- <h2>KIỂM TRA NĂM NHUẬN
- </h2>
-  <div>
-    Năm: <input id="txtNam" type="number"/>
-  </div>
-  <button type="button">Kiểm tra</button>
-  <div id="ketqua"></div>
-  <script src="jquery-3.7.1.jx"></script>
-  <cript>
-    $(document).ready(function)(){
-    $("button").click(function){
-    let nam = $("#txtNam").val();
-    let thang = $("txtThang").val();
-    let namNhuan = false;
-    if((nam % 400==0 || (nam % 4==0) && (nam % 100!= 0))){
-    laNamNhuan = true;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 20px;
     }
-    let soNgay=0;
-    swicht (thang)
-    {
-    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-    soNgay=31; break;
-    case 2: soNgay = laNamNhuan ? 29 : 28; break;
-    case 4: case 6: case 9: case 11:
-    soNgay =30; break;
+
+    header {
+      text-align: center;
     }
-    var html = Năm ${nam} là năm + laNamNhuan ? 'nhuận' : 'không nhuận');
-    $("#ketqua").html(htmlv);
-    });
-    });
-  </script>
-</BODY>
-</HTML>
+
+    h1, h2 {
+      color: #3498db;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .education, .experience {
+      margin-bottom: 20px;
+    }
+  </style>
+  <title> Lư Thị Như Mỹ - CV</title>
+</head>
+<body>
+
+  <header>
+    <h1>Lư Thị Như Mỹ </h1>
+    <p>Web Developer</p>
+  </header>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong> Đại học sư phạm TPHCM </strong> - Bachelor's Degree in Computer Science (Year)</li>
+      <!-- Add more education details if needed -->
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>Company Name</strong> - Position Title (Year-Year)
+        <ul>
+          <li>Responsibility 1</li>
+          <li>Responsibility 2</li>
+          <!-- Add more responsibilities if needed -->
+        </ul>
+      </li>
+      <!-- Add more work experience details if needed -->
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Web Development</li>
+      <!-- Add more skills if needed -->
+    </ul>
+  </section>
+
+</body>
+</html>
